@@ -93,6 +93,14 @@
     font-size: 1.5rem;
     padding: 0 1rem;
   }
+
+  /* Values Columns */
+  .values-columns {
+    flex-direction: row;
+  }
+  .column {
+    flex: 1;
+  }
 }
 
 /* === Mobile (320px - 767px) === */
@@ -173,57 +181,73 @@
     font-size: 1.5rem;
     padding: 0 1rem;
   }
-  /* === Small Mobile (320px - 480px) === */
-  @media screen and (max-width: 480px) {
-    /* Hero */
-    .hero-title {
-      font-size: 2rem;
-    }
-    .hero-subtitle {
-      font-size: 0.95rem;
-      text-align: center;
-    }
 
-    /* Networks section */
-    .section-title {
-      font-size: 1.25rem;
-    }
-    .section-text {
-      font-size: 0.8125rem;
-    }
-
-    /* Quote */
-    .legacy-quote {
-      font-size: 1.5rem;
-    }
+  /* Values Columns */
+  .values-columns {
+    flex-direction: column;
   }
 
-  /* === Large Desktop (1400px) === */
-  @media screen and (min-width: 1400px) {
-    .container {
-      max-width: 1600px;
-    }
-
-    .hero-title {
-      font-size: 4.5rem;
-    }
-
-    .section-title {
-      font-size: 3rem;
-    }
-
-    .legacy-quote {
-      font-size: 3rem;
-    }
+  .value-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
   }
 
-  /* === Extra Large Desktop (1920px) === */
-  @media screen and (min-width: 1920px) {
-    .container {
-      max-width: 1800px;
-    }
-    html {
-      font-size: 18px;
-    }
+  .value-card.tall img {
+    height: 400px;
+  }
+}
+
+/* === Small Mobile (320px - 480px) === */
+@media screen and (max-width: 480px) {
+  /* Hero */
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-subtitle {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  /* Networks section */
+  .section-title {
+    font-size: 1.25rem;
+  }
+  .section-text {
+    font-size: 0.8125rem;
+  }
+
+  /* Quote */
+  .legacy-quote {
+    font-size: 1.5rem;
+  }
+}
+
+/* === Large Desktop (1400px) === */
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1600px;
+  }
+
+  .hero-title {
+    font-size: 4.5rem;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .legacy-quote {
+    font-size: 3rem;
+  }
+}
+
+/* === Extra Large Desktop (1920px) === */
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1800px;
+  }
+  html {
+    font-size: 18px;
   }
 }
