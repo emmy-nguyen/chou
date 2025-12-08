@@ -1,0 +1,31 @@
+:root {
+  --primary-color-black: #0d0d0d;
+  --primary-color-pureWhite: #ffffff;
+  --primary-color-chouPurple: #27004b;
+  --secondary-color-richGrey: #262626;
+  --secondary-color-mediumGrey: #d1d3d4;
+  --secondary-color-lightGrey: #f8f8f8;
+  --tertiary-color-fuschia: #810054;
+  --tertiary-color-richGold: #dba510;
+  --transition-speed: 0.3s;
+  --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Nunito Regular", Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--primary-color-black);
+  background-color: var(--primary-color-pureWhite);
+  overflow-x: hidden;
+}

@@ -11,5 +11,56 @@
 
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <!--- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="#home" aria-label="CHOU COLLECTIVE Home">CHOU COLLECTIVE</a>
+        </div>
+
+        <button
+          class="nav-toggle"
+          aria-label="Toggle navigation menu"
+          aira-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#ensemble" class="nav-link">Ensemble</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              href="#alignments"
+              class="nav-link"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Alignments <span class="dropdown-arrow">▾</span></a
+            >
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a href="#" class="dropdown-link" role="menuitem">Link</a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-link" role="menuitem">Link</a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-link" role="menuitem">Link</a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-link" role="menuitem">Link</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </body>
 </html>
