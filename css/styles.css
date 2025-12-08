@@ -27,11 +27,20 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Nunito", sans-serif;
   line-height: 1.6;
   color: var(--primary-color-black);
   background-color: var(--primary-color-pureWhite);
   overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "KnockoutHTF53";
+  src: url("../assets/fonts/Knockout-HTF53-Heviweight.woff") format("woff"),
+    ("../assets/fonts/Knockout-HTF53-Heviweight.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* Typography */
@@ -44,6 +53,7 @@ h6 {
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: 0.05rem;
+  font-family: "KnockoutHTF53", Arial, sans-serif;
 }
 
 h1 {
@@ -80,4 +90,60 @@ img {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+.hero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  max-width: 900px;
+  padding: 2rem;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.15rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color-pureWhite);
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  font-weight: 300;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--primary-color-pureWhite);
+  text-align: left;
+  font-size: var(--);
 }

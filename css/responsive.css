@@ -74,25 +74,52 @@
     width: 85%;
     max-width: none;
   }
-}
 
-/* === Small Mobile (320px - 480px) === */
-@media screen and (max-width: 480px) {
-}
-
-/* === Large Desktop (1400px) === */
-@media screen and (min-width: 1400px) {
-  .container {
-    max-width: 1600px;
+  .hero {
+    min-height: 500px;
+    height: 70vh;
   }
-}
-
-/* === Extra Large Desktop (1920px) === */
-@media screen and (min-width: 1920px) {
-  .container {
-    max-width: 1800px;
+  .hero-title {
+    font-size: 2.25rem;
+    letter-spacing: 0.1rem;
   }
-  html {
-    font-size: 18px;
+  .hero-subtitle {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .hero-content {
+    padding: 3rem;
+  }
+
+  /* === Small Mobile (320px - 480px) === */
+  @media screen and (max-width: 480px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+    .hero-subtitle {
+      font-size: 0.95rem;
+      text-align: center;
+    }
+  }
+
+  /* === Large Desktop (1400px) === */
+  @media screen and (min-width: 1400px) {
+    .container {
+      max-width: 1600px;
+    }
+
+    .hero-title {
+      font-size: 4.5rem;
+    }
+  }
+
+  /* === Extra Large Desktop (1920px) === */
+  @media screen and (min-width: 1920px) {
+    .container {
+      max-width: 1800px;
+    }
+    html {
+      font-size: 18px;
+    }
   }
 }
