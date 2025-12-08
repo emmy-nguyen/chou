@@ -1,3 +1,7 @@
+/* ===================================
+   CHOU COLLECTIVE - Main Styles
+   =================================== */
+
 :root {
   --primary-color-black: #0d0d0d;
   --primary-color-pureWhite: #ffffff;
@@ -23,9 +27,57 @@ html {
 }
 
 body {
-  font-family: "Nunito Regular", Arial, sans-serif;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
   color: var(--primary-color-black);
   background-color: var(--primary-color-pureWhite);
   overflow-x: hidden;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.05rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: var(--primary-color-black);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color var(--transition-speed) var(--transition-smooth);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Container */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }

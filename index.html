@@ -10,15 +10,20 @@
     <title>CHOU COLLECTIVE</title>
 
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!--- Navigation Bar -->
     <nav class="navbar" role="navigation" aria-label="Main navigation">
-      <div class="nav-container">
-        <div class="nav-logo">
-          <a href="#home" aria-label="CHOU COLLECTIVE Home">CHOU COLLECTIVE</a>
-        </div>
-
+      <div class="navbar-container">
         <button
           class="nav-toggle"
           aria-label="Toggle navigation menu"
@@ -31,7 +36,7 @@
 
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="#home" class="nav-link">Home</a>
+            <a href="/" class="nav-link active">Home</a>
           </li>
           <li class="nav-item">
             <a href="#ensemble" class="nav-link">Ensemble</a>
@@ -42,8 +47,22 @@
               class="nav-link"
               aria-haspopup="true"
               aria-expanded="false"
-              >Alignments <span class="dropdown-arrow">▾</span></a
-            >
+              >Alignments
+              <span class="dropdown-arrow"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#27004b"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="6 9 12 15 18 9" />
+                </svg> </span
+            ></a>
             <ul class="dropdown-menu" role="menu">
               <li>
                 <a href="#" class="dropdown-link" role="menuitem">Link</a>
