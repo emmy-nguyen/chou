@@ -1,0 +1,98 @@
+/* ===================================
+   CHOU COLLECTIVE - Components
+   =================================== */
+
+/* === Tablet (768px - 1024px) === */
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .nav-toggle {
+    display: flex;
+  }
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: var(--primary-color-pureWhite);
+    flex-direction: column;
+    padding: 5rem 2rem 2rem;
+    gap: 1.5rem;
+    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: auto;
+  }
+  .nav-menu.active {
+    right: 0;
+  }
+  .nav-item {
+    width: 100%;
+  }
+  .nav-link {
+    font-size: 1.125rem;
+    padding: 0.75rem 0;
+  }
+  .dropdown.active .dropdown-menu {
+    max-height: 300px;
+  }
+  .dropdown-arrow {
+    margin-left: auto;
+  }
+}
+
+/* === Mobile (320px - 767px) === */
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 1rem;
+  }
+  html {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .nav-container {
+    padding: 1rem;
+  }
+  .nav-menu {
+    width: 85%;
+    max-width: none;
+  }
+}
+
+/* === Small Mobile (320px - 480px) === */
+@media screen and (max-width: 480px) {
+}
+
+/* === Large Desktop (1400px) === */
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
+/* === Extra Large Desktop (1920px) === */
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1800px;
+  }
+  html {
+    font-size: 18px;
+  }
+}
