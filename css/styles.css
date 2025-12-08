@@ -165,9 +165,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* filter: grayscale(100%); */
-  /* transition: filter var(--transition-speed) var(--transition-smooth); */
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .section-title {
@@ -200,7 +198,7 @@ img {
 }
 .grid-item {
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .grid-item img {
   width: 100%;
@@ -255,7 +253,7 @@ img {
 }
 .value-card {
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 20px;
   transition: transform var(--transition-speed) var(--transition-smooth);
 }
 
@@ -267,4 +265,81 @@ img {
 
 .value-card.tall img {
   height: 600px;
+}
+
+/* Ensemble Section */
+.ensemble-section {
+  padding: 100px 0;
+  background-color: var(--primary-color-pureWhite);
+}
+
+.section-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  margin-bottom: 3rem;
+  color: var(--primary-color-black);
+  position: relative;
+  gap: 1rem;
+  align-items: center;
+  display: flex;
+}
+
+.section-heading::before,
+.section-heading::after {
+  content: "";
+  height: 4px;
+  background-color: var(--tertiary-color-fuschia);
+  display: block;
+}
+
+.section-heading::before {
+  flex: 0.2;
+}
+
+.section-heading::after {
+  flex: 2;
+}
+
+.ensemble-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: flex-end;
+  padding: 0px 2rem 0px 2rem;
+}
+
+.ensemble-image {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.ensemble-image img {
+  width: 100%;
+  transition: filter var(--transition-speed) var(--transition-smooth);
+}
+.ensemble-text {
+  width: 400px;
+}
+.ensemble-text p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--primary-color-black);
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background-color: var(--primary-color-chouPurple);
+  color: var(--primary-color-pureWhite);
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all var(--transition-speed) var(--transition-smooth);
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
 }
