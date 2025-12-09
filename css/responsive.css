@@ -117,6 +117,25 @@
     font-size: 1rem;
     width: 100%;
   }
+
+  /* Footer */
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+    margin-top: 1rem;
+  }
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-info {
+    margin: 0px 20px 0px 20px;
+  }
 }
 
 /* === Mobile (320px - 767px) === */
@@ -223,6 +242,11 @@
   .cta-button {
     padding: 0.875rem 2rem;
     font-size: 0.95rem;
+  }
+
+  /* Footer */
+  .footer-info {
+    margin-left: 0px;
   }
 }
 
