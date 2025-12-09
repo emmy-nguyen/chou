@@ -40,7 +40,7 @@ Accessibility
 - ARIA labels and attributes
 - Focus styles for interactive elements
 
-File Structure
+````File Structure
 project/
 │
 ├── index.html # Main HTML file
@@ -53,4 +53,5 @@ project/
 │
 └── /js
 ├── main.js # Scroll animations, reveal effects, interactions
-└── navbar.js # Sticky navbar, dropdown, mobile menu logic
+└── navbar.js # Sticky navbar, dropdown, mobile menu logic```
+````
