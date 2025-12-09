@@ -47,11 +47,30 @@
   }
 
   /* Dropdown Menu */
-  .dropdown.active .dropdown-menu {
-    max-height: 300px;
+  .dropdown-menu {
+    position: static;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: none;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: max-height 0.35s ease;
   }
+
+  .dropdown.active .dropdown-menu {
+    max-height: 500px;
+    padding: 0.5rem;
+  }
+
   .dropdown-arrow {
     margin-left: auto;
+    transition: transform 0.3s ease;
+  }
+
+  .dropdown.active .dropdown-arrow {
+    transform: rotate(180deg);
   }
 
   /* Network section */
@@ -166,6 +185,25 @@
   .nav-menu {
     width: 85%;
     max-width: none;
+  }
+
+  /* Dropdown Menu */
+  .dropdown-menu {
+    position: static;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+  }
+
+  .dropdown.active .dropdown-menu {
+    max-height: 500px;
+  }
+  .dropdown.active .dropdown-arrow {
+    transform: rotate(180deg);
   }
 
   /* Hero */
