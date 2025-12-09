@@ -181,13 +181,18 @@ button {
   cursor: pointer;
 }
 
-.btn-primary {
-  background-color: var(--tertiary-color-fuschia);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(74, 20, 140, 0.4);
+/* Hovering effects */
+.hover-zoom {
+  transition: transform 0.5s var(--transition-smooth);
 }
-.btn-secondary {
-  background-color: transparent;
-  color: var(--primary-color-pureWhite);
-  border: 2px solid var(--primary-color-black);
+
+.hover-zoom:hover {
+  transform: scale(1.05);
+}
+
+.hover-scale {
+  transition: transform 0.4s var(--transition-smooth);
+}
+.hover-scale:hover {
+  transform: scale(1.08);
 }

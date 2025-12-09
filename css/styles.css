@@ -193,8 +193,6 @@ img {
   gap: 2rem;
   max-width: 1400px;
   margin: 0 0;
-  /* grid-auto-rows: 300px; */
-  /* align-items: end; */
 }
 .grid-item {
   overflow: hidden;
@@ -320,7 +318,7 @@ img {
   transition: filter var(--transition-speed) var(--transition-smooth);
 }
 .ensemble-text {
-  width: 400px;
+  width: 500px;
 }
 .ensemble-text p {
   font-size: 1.125rem;
