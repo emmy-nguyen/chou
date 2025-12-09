@@ -180,6 +180,7 @@ img {
   line-height: 1.8;
   color: var(--primary-color-black);
   margin-bottom: 1.5rem;
+  font-weight: 300;
 }
 
 /* Collaboration Grid */
@@ -325,6 +326,7 @@ img {
   line-height: 1.8;
   color: var(--primary-color-black);
   margin-bottom: 2rem;
+  font-weight: 300;
 }
 
 .cta-button {
@@ -334,7 +336,7 @@ img {
   color: var(--primary-color-pureWhite);
   border-radius: 20px;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   transition: all var(--transition-speed) var(--transition-smooth);
 }
 
@@ -346,6 +348,8 @@ img {
 .footer-section {
   padding: 100px 0;
   background: var(--primary-color-chouPurple);
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
 }
 .footer-info-heading {
   text-align: start;
@@ -358,7 +362,7 @@ img {
 .footer-content {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 4rem;
+  gap: 6rem;
   align-items: center;
   justify-content: center;
   max-width: 700px;
@@ -391,11 +395,12 @@ a {
 }
 
 .footer-info-details-heading {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .footer-info-description {
   margin-bottom: 2rem;
+  font-weight: 300;
 }
 
 .footer-copyright {
@@ -403,6 +408,8 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
 }
 .footer-privacy-link:hover {
   text-decoration: underline;

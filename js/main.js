@@ -17,8 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }, observerOptions);
 
   const revealElements = document.querySelectorAll(
-    ".reveal-up, .reveal-down, .reveal-left, .reveal-right, " +
-      ".fade-in-up, .fade-in-down, .slide-up, .slide-down"
+    ".reveal-up, .reveal-down, .reveal-left, .reveal-right"
   );
 
   revealElements.forEach((element) => {

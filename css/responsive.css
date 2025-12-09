@@ -76,7 +76,7 @@
   /* Network section */
   .networks-grid {
     grid-template-columns: 1fr;
-    gap: 4rem;
+    gap: 32rem;
   }
   .networks-image {
     max-height: 500px;
@@ -84,6 +84,12 @@
   .networks-image img {
     object-fit: cover;
     height: 100%;
+  }
+  .networks-section {
+    padding: 60px 20px;
+  }
+  .networks-content {
+    margin-top: 50px;
   }
   .section-title {
     font-size: 1.5rem;
@@ -228,6 +234,10 @@
     padding: 60px 20px;
   }
 
+  .networks-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
   /* Collaboration grid */
   .collaboration-grid {
     padding: 0px 0px;
@@ -284,7 +294,7 @@
 
   /* Footer */
   .footer-info {
-    margin-left: 0px;
+    margin: 0px 20px 0px 20px;
   }
 }
 
