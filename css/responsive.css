@@ -18,6 +18,11 @@
   }
 
   /* Navigation */
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .nav-toggle {
     display: flex;
   }
@@ -187,6 +192,8 @@
   /* Navigation */
   .nav-container {
     padding: 1rem;
+    display: flex;
+    justify-content: space-between;
   }
   .nav-menu {
     width: 85%;
